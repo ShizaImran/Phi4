@@ -1,17 +1,13 @@
-# Python
+# Ignore compiled files and cache
 __pycache__/
 *.pyc
 
-# Secrets
+# Ignore secrets
 *.json
 *.toml
 .streamlit/secrets.toml
 
-# FAISS index
-*.pkl
-*.index
-
-# OS / Editor
-.DS_Store
+# IDE and OS stuff
 .vscode/
 .idea/
+.DS_Store
