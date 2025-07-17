@@ -1,0 +1,17 @@
+# Python
+__pycache__/
+*.pyc
+
+# Secrets
+*.json
+*.toml
+.streamlit/secrets.toml
+
+# FAISS index
+*.pkl
+*.index
+
+# OS / Editor
+.DS_Store
+.vscode/
+.idea/
