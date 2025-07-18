@@ -4,7 +4,6 @@ import httpx
 import traceback
 from dotenv import load_dotenv
 from utils.rag_utils import retrieve_context
-<<<<<<< HEAD
 import streamlit as st
 
 #load_dotenv()
