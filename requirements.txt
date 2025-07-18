@@ -8,3 +8,4 @@ pandas
 PyMuPDF
 plotly
 faiss-cpu
+sentence-transformers
