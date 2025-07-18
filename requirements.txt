@@ -6,3 +6,4 @@ openpyxl
 groq
 pandas
 PyMuPDF
+plotly
