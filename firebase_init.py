@@ -42,8 +42,4 @@ def update_overall_stats(email):
         "mastered_topics": mastered,
         "last_updated": firestore.SERVER_TIMESTAMP
     }
-<<<<<<< HEAD
     progress_ref.set({"overall_stats": stats}, merge=True)
-=======
-    progress_ref.set({"overall_stats": stats}, merge=True)
->>>>>>> f49e2f7 (Upload local folder to GitHub repo)
