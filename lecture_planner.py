@@ -7,8 +7,8 @@ from curriculum import get_curriculum_data
 from firebase_utils import get_resources_by_topic
 
 # Load API key
-load_dotenv()
-OPENROUTER_API_KEY = os.getenv("OPENROUTER_API_KEY")
+#load_dotenv()
+OPENROUTER_API_KEY = st.secrets["OPENROUTER_API_KEY"]
 PHI_MODEL = "microsoft/phi-4"
 
 # === Phi-4 API Call ===
