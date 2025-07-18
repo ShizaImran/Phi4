@@ -4,6 +4,7 @@ import httpx
 import traceback
 from dotenv import load_dotenv
 from utils.rag_utils import retrieve_context
+import streamlit as st
 
 #load_dotenv()
 OPENROUTER_API_KEY = st.secrets["OPENROUTER_API_KEY"]
