@@ -4,10 +4,16 @@ import httpx
 import traceback
 from dotenv import load_dotenv
 from utils.rag_utils import retrieve_context
+<<<<<<< HEAD
 import streamlit as st
 
 #load_dotenv()
 OPENROUTER_API_KEY = st.secrets["OPENROUTER_API_KEY"]
+=======
+
+load_dotenv()
+OPENROUTER_API_KEY = os.getenv("OPENROUTER_API_KEY")
+>>>>>>> f49e2f7 (Upload local folder to GitHub repo)
 PHI_MODEL = "microsoft/phi-4"
 
 # === 🔁 Universal Phi-4 Call ===

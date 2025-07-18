@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import streamlit as st
 import firebase_admin
 from firebase_admin import credentials, firestore
@@ -16,6 +17,21 @@ if not firebase_admin._apps:
         "client_x509_cert_url": st.secrets["FIREBASE_CLIENT_X509_CERT_URL"]
     })
     firebase_admin.initialize_app(cred)
+=======
+import firebase_admin
+from firebase_admin import credentials, firestore
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
+
+# Initialize Firebase
+cred = credentials.Certificate(os.getenv("FIREBASE_CREDENTIALS_PATH"))
+if not firebase_admin._apps:
+    firebase_admin.initialize_app(cred, {
+        'databaseURL': os.getenv("FIREBASE_DATABASE_URL")
+    })
+>>>>>>> f49e2f7 (Upload local folder to GitHub repo)
 
 db = firestore.client()
 
@@ -43,4 +59,8 @@ def update_overall_stats(email):
         "mastered_topics": mastered,
         "last_updated": firestore.SERVER_TIMESTAMP
     }
+<<<<<<< HEAD
     progress_ref.set({"overall_stats": stats}, merge=True)
+=======
+    progress_ref.set({"overall_stats": stats}, merge=True)
+>>>>>>> f49e2f7 (Upload local folder to GitHub repo)
