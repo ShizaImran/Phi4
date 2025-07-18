@@ -4,7 +4,7 @@ import os
 import httpx
 from dotenv import load_dotenv
 from curriculum import get_curriculum_data
-from firebase_utils import get_resources_by_topic
+from firebase_utils import get_resources_by_topics
 
 # Load API key
 OPENROUTER_API_KEY = st.secrets["OPENROUTER_API_KEY"]
